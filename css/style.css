@@ -39,11 +39,14 @@ section {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background-color: (var(--bg-color));
+  background: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+
+  border-radius: 15px;
+  box-shadow: 0 0 1rem #111;
 }
 
 .logo {
@@ -73,12 +76,12 @@ section {
 
 .home {
   display: flex;
-  justify-content: space-around; /* TODO: correct on mobile */
+  justify-content: space-between; /* TODO: correct on mobile */
   align-items: center;
 }
 
 .home-img img {
-  width: 30vw;
+  width: 35vw;
   border-radius: 50%;
   border: solid 5px var(--second-bg-color);
   box-shadow: 0 0 1rem #111;
@@ -98,7 +101,7 @@ section {
   margin-bottom: 2rem;
 }
 
-.home-content h3:nth-of-type(2) > span {
+span:not(#age) {
   color: var(--main-color);
 }
 
