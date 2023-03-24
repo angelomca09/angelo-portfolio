@@ -45,7 +45,7 @@ section {
   align-items: center;
   z-index: 100;
 
-  border-radius: 15px;
+  border-radius: 0 0 15px 15px;
   box-shadow: 0 0 1rem #111;
 }
 
