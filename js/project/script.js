@@ -11,9 +11,11 @@ function makeProjectElement(project) {
   </div>`;
 }
 
-window.onload = async () => {
+window.addEventListener("load", async () => {
   const projectContainer = document.querySelector("#project-container");
+
+  projectContainer.innerHTML = "";
   projects.reverse().forEach((project) => {
     projectContainer.innerHTML += makeProjectElement(project);
   });
-};
+});
