@@ -16,6 +16,12 @@
   --second-bg-color: #323946;
   --text-color: #eee;
   --main-color: #0ef;
+  --background-linear: linear-gradient(
+    90deg,
+    rgba(65, 72, 86, 1) 0%,
+    rgba(50, 57, 70, 1) 50%,
+    rgba(31, 36, 45, 1) 100%
+  );
 }
 
 html {
@@ -25,6 +31,7 @@ html {
 
 body {
   background: var(--bg-color);
+  background: var(--background-linear);
   color: var(--text-color);
 }
 
@@ -39,7 +46,7 @@ section {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: var(--second-bg-color);
+  background: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -159,14 +166,8 @@ span:not(#age) {
   align-items: center;
 
   background: var(--second-bg-color);
-  background-image: url(../images/texture.png),
-    linear-gradient(
-      to right,
-      var(--bg-color) 0%,
-      var(--second-bg-color) 20%,
-      var(--text-color) 100%
-    );
-  box-shadow: 0 0 33rem #111 inset;
+  background-image: url(../images/texture.png), var(--background-linear);
+  box-shadow: 0 0 3rem #111 inset;
 }
 
 .about-content h1 {
