@@ -100,6 +100,12 @@ section {
   box-shadow: 0 0 2rem var(--shadow-color);
 }
 
+h1,
+h2,
+h3 {
+  text-shadow: 4px 3px 0 var(--bg-color);
+}
+
 .home-content h3 {
   font-size: 3.2rem;
   font-weight: 700;
@@ -285,6 +291,11 @@ span:not(#age, #year) {
   padding: 0.8rem;
   background: var(--main-color);
   border-radius: 0.8rem;
+  transition: 0.5s ease;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--main-color);
 }
 
 .footer-iconTop a i {
