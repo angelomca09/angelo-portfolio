@@ -72,6 +72,7 @@ window.addEventListener("scroll", () => {
   navbar.classList.remove("active");
 });
 
+//#region Scroll Reveal
 ScrollReveal({
   distance: "80px",
   duration: 1500,
@@ -90,5 +91,15 @@ ScrollReveal().reveal(".home-content h1, .card-group", {
 ScrollReveal().reveal(".home-content p, .about-content", {
   origin: "right",
 });
+//#endregion
 
+//#endregion
+
+//#region TypedJS
+const typed = new Typed("#occupations", {
+  strings: ["Fullstack Dev", "Computer Engineer"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  loop: true,
+});
 //#endregion
