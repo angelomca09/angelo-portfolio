@@ -15,7 +15,7 @@ document.querySelector("#year").textContent = today.getFullYear();
 //#endregion
 
 //#region PROJECTS
-function makeProjectElement(project) {
+function makeContentElement(project) {
   const { title, description, image, link } = project;
   return `
   <div class="container-box">
@@ -31,7 +31,27 @@ const projectContainer = document.querySelector("#project-container");
 
 projectContainer.innerHTML = "";
 projects.reverse().forEach((project) => {
-  projectContainer.innerHTML += makeProjectElement(project);
+  projectContainer.innerHTML += makeContentElement(project);
+});
+//#endregion
+
+//#region GRADUATIONS
+
+const graduationContainer = document.querySelector("#graduation-container");
+
+graduationContainer.innerHTML = "";
+education.reverse().forEach((project) => {
+  graduationContainer.innerHTML += makeContentElement(project);
+});
+//#endregion
+
+//#region CERTIFICATES
+
+const certification = document.querySelector("#certification-container");
+
+certification.innerHTML = "";
+certificates.reverse().forEach((project) => {
+  certification.innerHTML += makeContentElement(project);
 });
 //#endregion
 

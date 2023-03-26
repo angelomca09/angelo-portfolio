@@ -41,6 +41,11 @@ section {
   padding: 10rem 9% 2rem;
 }
 
+section h3 {
+  margin: 3rem 0 2rem 0;
+  font-size: 2.5rem;
+}
+
 section:nth-child(2n -1) {
   background: var(--second-bg-color);
   background-image: url(../images/texture.png), var(--background-linear);
@@ -245,6 +250,7 @@ span:not(#age, #year) {
 .container-layer p {
   font-size: 1.6rem;
   margin: 0.3rem 0 1rem;
+  white-space: break-spaces;
 }
 
 .container-layer a {
