@@ -73,7 +73,6 @@ window.addEventListener("scroll", () => {
 });
 
 ScrollReveal({
-  reset: true,
   distance: "80px",
   duration: 1500,
   delay: 100,
@@ -81,6 +80,15 @@ ScrollReveal({
 
 ScrollReveal().reveal(".home-content, .about-content, .heading", {
   origin: "top",
+});
+ScrollReveal().reveal(".home-img, .project-box, .heading", {
+  origin: "bottom",
+});
+ScrollReveal().reveal(".home-content h1, .card-group", {
+  origin: "left",
+});
+ScrollReveal().reveal(".home-content p, .about-content", {
+  origin: "right",
 });
 
 //#endregion
