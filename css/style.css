@@ -41,6 +41,12 @@ section {
   padding: 10rem 9% 2rem;
 }
 
+section:nth-child(2n -1) {
+  background: var(--second-bg-color);
+  background-image: url(../images/texture.png), var(--background-linear);
+  box-shadow: 0 0 3rem var(--shadow-color) inset;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -171,10 +177,6 @@ span:not(#age, #year) {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
-  background: var(--second-bg-color);
-  background-image: url(../images/texture.png), var(--background-linear);
-  box-shadow: 0 0 3rem var(--shadow-color) inset;
 }
 
 .about-content h1 {
@@ -192,14 +194,14 @@ span:not(#age, #year) {
   margin-bottom: 4rem;
 }
 
-#project-container {
+.section-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
 
-#project-container .project-box {
+.section-container .container-box {
   position: relative;
   border-radius: 2rem;
   box-shadow: 0 0 1rem var(--shadow-color);
@@ -207,15 +209,15 @@ span:not(#age, #year) {
   display: flex;
 }
 
-.project-box img {
+.container-box img {
   width: 100%;
   transition: 0.5s ease;
 }
-.project-box:hover img {
+.container-box:hover img {
   transform: scale(1.1);
 }
 
-.project-box .project-layer {
+.container-box .container-layer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -232,20 +234,20 @@ span:not(#age, #year) {
   transition: 0.5s ease;
 }
 
-.project-box:hover .project-layer {
+.container-box:hover .container-layer {
   transform: translateY(0);
 }
 
-.project-layer h4 {
+.container-layer h4 {
   font-size: 3rem;
 }
 
-.project-layer p {
+.container-layer p {
   font-size: 1.6rem;
   margin: 0.3rem 0 1rem;
 }
 
-.project-layer a {
+.container-layer a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -255,7 +257,7 @@ span:not(#age, #year) {
   border-radius: 50%;
 }
 
-.project-layer a i {
+.container-layer a i {
   font-size: 2rem;
   color: var(--second-bg-color);
 }
@@ -323,7 +325,7 @@ span:not(#age, #year) {
     padding: 2rem 3%;
   }
 
-  #project-container {
+  .section-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -387,7 +389,7 @@ span:not(#age, #year) {
 }
 
 @media (max-width: 617px) {
-  #project-container {
+  .section-container {
     grid-template-columns: 1fr;
   }
 }

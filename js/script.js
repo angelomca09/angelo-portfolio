@@ -18,9 +18,9 @@ document.querySelector("#year").textContent = today.getFullYear();
 function makeProjectElement(project) {
   const { title, description, image, link } = project;
   return `
-  <div class="project-box">
+  <div class="container-box">
     <img src="${image}.png" alt="${title}" />
-    <div class="project-layer">
+    <div class="container-layer">
       <h4>${title}</h4>
       <p>${description}</p>
       <a href="${link}" target="_blank"><i class="bx bx-link-external"></i></a>
@@ -93,7 +93,7 @@ ScrollReveal({
 ScrollReveal().reveal(".home-content, .about-content, .heading", {
   origin: "top",
 });
-ScrollReveal().reveal(".home-img, .project-box, .heading", {
+ScrollReveal().reveal(".home-img, .container-box, .heading", {
   origin: "bottom",
 });
 ScrollReveal().reveal(".home-content h1, .card-group", {
