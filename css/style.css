@@ -109,7 +109,7 @@ section {
   margin-bottom: 2rem;
 }
 
-span:not(#age) {
+span:not(#age, #year) {
   color: var(--main-color);
 }
 

@@ -11,4 +11,5 @@ window.addEventListener("load", () => {
     age--;
   }
   document.querySelector("#age").textContent = age;
+  document.querySelector("#year").textContent = today.getFullYear();
 });
