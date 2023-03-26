@@ -35,6 +35,28 @@ projects.reverse().forEach((project) => {
 });
 //#endregion
 
+//#region EXPERIENCES
+function makeExperienceElement(experience) {
+  const { place, period, role, activities } = experience;
+  return `
+  <div class="experience-container">
+    <h3 class="experience-title">
+      ${place} <small>${period}</small>
+    </h3>
+    <p class="experience-description">${role}</p>
+    <ul class="experience-content">
+    ${activities.map((activity) => `<li>${activity}</li>`).join("")}
+    </ul>
+  </div>`;
+}
+const experienceContainer = document.querySelector("#experiences");
+
+experienceContainer.innerHTML = "";
+experiences.reverse().forEach((experience) => {
+  experienceContainer.innerHTML += makeExperienceElement(experience);
+});
+//#endregion
+
 //#region GRADUATIONS
 
 const graduationContainer = document.querySelector("#graduation-container");
