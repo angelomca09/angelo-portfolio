@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Angelo Portfolio</title>
+    <title>Angelo Munhoz - Portfolio</title>
 
     <!-- Boxicons import -->
     <link
@@ -20,16 +20,16 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <a href="#" class="logo">My Portfolio</a>
+      <a href="#" class="logo">Angelo Munhoz</a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
         <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
       </nav>
     </header>
 
@@ -37,7 +37,7 @@
     <section class="home" id="home">
       <div class="home-content">
         <h3>Hello, my name is</h3>
-        <h1>Angelo Munhoz</h1>
+        <h1><span>Angelo Munhoz</span></h1>
         <h3>and I'm a <span id="occupations"></span>.</h3>
         <p>
           I'm a <span id="age">&lt;age&gt;</span> years old Brazilian developer
@@ -61,7 +61,7 @@
             ><i class="bx bxl-gmail"></i
           ></a>
         </div>
-        <a href="assets/Angelo_CV_EN.pdf" download class="btn">Download CV</a>
+        <a href="assets/Angelo_CV.pdf" download class="btn">Download CV</a>
       </div>
 
       <div class="home-img">
@@ -72,7 +72,7 @@
     <!-- About -->
     <section class="about" id="about">
       <div class="about-content">
-        <h1>About <span>Me</span>:</h1>
+        <h1><span>About</span> Me:</h1>
       </div>
       <div class="card-group">
         <div class="small-card card"></div>
@@ -86,6 +86,31 @@
       </div>
     </section>
 
+    <!-- Experience -->
+    <section class="experience" id="experience">
+      <h2 class="heading">Professional <span>Experience</span> History:</h2>
+
+      <!-- experiences are load via script -->
+      <div id="experiences"></div>
+    </section>
+
+    <!-- Education -->
+    <section class="education" id="education">
+      <h2 class="heading"><span>Education</span> Background:</h2>
+
+      <!-- graduations are load via script -->
+      <h3>Graduations</h3>
+      <div id="graduation-container" class="section-container">
+        &lt;graduation&gt;
+      </div>
+
+      <!-- certifications are load via script -->
+      <h3>Certifications</h3>
+      <div id="certification-container" class="section-container">
+        &lt;certification&gt;
+      </div>
+    </section>
+
     <!-- Projects -->
     <section class="projects" id="projects">
       <h2 class="heading">Latest <span>Projects</span>:</h2>
@@ -94,29 +119,6 @@
       <div id="project-container" class="section-container">
         &lt;projects&gt;
       </div>
-    </section>
-
-    <!-- Education -->
-    <section class="education" id="education">
-      <h2 class="heading"><span>Education</span> Background:</h2>
-
-      <h3>Graduations</h3>
-      <div id="graduation-container" class="section-container">
-        &lt;graduation&gt;
-      </div>
-
-      <h3>Certifications</h3>
-      <div id="certification-container" class="section-container">
-        &lt;certification&gt;
-      </div>
-    </section>
-
-    <!-- Experience -->
-
-    <section class="experience" id="experience">
-      <h2 class="heading">Professional <span>Experience</span> History:</h2>
-
-      <div id="experiences"></div>
     </section>
 
     <!-- Footer -->

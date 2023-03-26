@@ -14,27 +14,6 @@ document.querySelector("#age").textContent = age;
 document.querySelector("#year").textContent = today.getFullYear();
 //#endregion
 
-//#region PROJECTS
-function makeContentElement(project) {
-  const { title, description, image, link } = project;
-  return `
-  <div class="container-box">
-    <img src="${image}.png" alt="${title}" />
-    <div class="container-layer">
-      <h4>${title}</h4>
-      <p>${description}</p>
-      <a href="${link}" target="_blank"><i class="bx bx-link-external"></i></a>
-    </div>
-  </div>`;
-}
-const projectContainer = document.querySelector("#project-container");
-
-projectContainer.innerHTML = "";
-projects.reverse().forEach((project) => {
-  projectContainer.innerHTML += makeContentElement(project);
-});
-//#endregion
-
 //#region EXPERIENCES
 function makeExperienceElement(experience) {
   const { place, period, role, activities } = experience;
@@ -58,7 +37,18 @@ experiences.reverse().forEach((experience) => {
 //#endregion
 
 //#region GRADUATIONS
-
+function makeContentElement(project) {
+  const { title, description, image, link } = project;
+  return `
+  <div class="container-box">
+    <img src="${image}.png" alt="${title}" />
+    <div class="container-layer">
+      <h4>${title}</h4>
+      <p>${description}</p>
+      <a href="${link}" target="_blank"><i class="bx bx-link-external"></i></a>
+    </div>
+  </div>`;
+}
 const graduationContainer = document.querySelector("#graduation-container");
 
 graduationContainer.innerHTML = "";
@@ -74,6 +64,15 @@ const certification = document.querySelector("#certification-container");
 certification.innerHTML = "";
 certificates.reverse().forEach((project) => {
   certification.innerHTML += makeContentElement(project);
+});
+//#endregion
+
+//#region PROJECTS
+const projectContainer = document.querySelector("#project-container");
+
+projectContainer.innerHTML = "";
+projects.reverse().forEach((project) => {
+  projectContainer.innerHTML += makeContentElement(project);
 });
 //#endregion
 
@@ -125,6 +124,8 @@ window.addEventListener("scroll", () => {
   navbar.classList.remove("active");
 });
 
+//#endregion
+
 //#region Scroll Reveal
 ScrollReveal({
   distance: "80px",
@@ -138,14 +139,15 @@ ScrollReveal().reveal(".home-content, .about-content, .heading", {
 ScrollReveal().reveal(".home-img, .container-box, .heading", {
   origin: "bottom",
 });
-ScrollReveal().reveal(".home-content h1, .card-group", {
+ScrollReveal().reveal(".home-content h1, .card-group, section h3", {
   origin: "left",
 });
-ScrollReveal().reveal(".home-content p, .about-content", {
-  origin: "right",
-});
-//#endregion
-
+ScrollReveal().reveal(
+  ".home-content p, .about-content, .experience-container p, .experience-container ul",
+  {
+    origin: "right",
+  }
+);
 //#endregion
 
 //#region TypedJS
