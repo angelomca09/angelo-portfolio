@@ -23,3 +23,14 @@ window.addEventListener("scroll", () => {
   menuIcon.classList.remove("bx-x");
   navbar.classList.remove("active");
 });
+
+ScrollReveal({
+  reset: true,
+  distance: "80px",
+  duration: 1500,
+  delay: 100,
+});
+
+ScrollReveal().reveal(".home-content, .about-content, .heading", {
+  origin: "top",
+});
