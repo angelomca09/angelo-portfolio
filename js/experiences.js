@@ -5,7 +5,7 @@ const experiences = [
     role: "Intern",
     activities: [
       "Worked at the R&D team of the Engineering Sector, developing embedded systems.",
-      "Maintaining Web intrefaces.",
+      "Maintained Web intrefaces.",
       "Developed and updated documentation.",
       "Techs: ReactJS, C#, AngularJS(legacy), Go, and MySQL.",
     ],
