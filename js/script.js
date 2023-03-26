@@ -48,6 +48,7 @@ menuIcon.addEventListener("click", () => {
 //#region SCROLL
 let sections = document.querySelectorAll("section");
 let navlinks = document.querySelectorAll("header nav a");
+let cardGroup = document.querySelector(".card-group");
 
 window.addEventListener("scroll", () => {
   sections.forEach((section) => {
@@ -63,6 +64,16 @@ window.addEventListener("scroll", () => {
           .querySelector(`header nav a[href*=${id}]`)
           .classList.add("active");
       });
+
+      if (id === "about") {
+        if (!cardGroup.classList.contains("active")) {
+          setTimeout(() => {
+            cardGroup.classList.add("active");
+          }, 300);
+        }
+      } else {
+        cardGroup.classList.remove("active");
+      }
     }
   });
   let header = document.querySelector("header");

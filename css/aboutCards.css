@@ -65,28 +65,28 @@
   background-image: url(../images/metal_gear.png);
 }
 
-.card-group:hover > .big-card:nth-child(2) {
+.card-group.active > .big-card:nth-child(2) {
   transform: translate(-75%, 16%) rotate(-24deg);
 }
-.card-group:hover > .big-card:nth-child(4) {
+.card-group.active > .big-card:nth-child(4) {
   transform: translate(-25%, 8%) rotate(-8deg);
 }
-.card-group:hover > .big-card:nth-child(6) {
+.card-group.active > .big-card:nth-child(6) {
   transform: translate(25%, 8%) rotate(8deg);
 }
-.card-group:hover > .big-card:nth-child(8) {
+.card-group.active > .big-card:nth-child(8) {
   transform: translate(75%, 16%) rotate(24deg);
 }
 
-.card-group:hover > .small-card:nth-child(1) {
+.card-group.active > .small-card:nth-child(1) {
   transform: translate(160%, -160%) rotate(-15deg);
 }
-.card-group:hover > .small-card:nth-child(3) {
+.card-group.active > .small-card:nth-child(3) {
   transform: translate(160%, 170%) rotate(15deg);
 }
-.card-group:hover > .small-card:nth-child(5) {
+.card-group.active > .small-card:nth-child(5) {
   transform: translate(-280%, -120%) rotate(15deg);
 }
-.card-group:hover > .small-card:nth-child(7) {
+.card-group.active > .small-card:nth-child(7) {
   transform: translate(-280%, 140%) rotate(-15deg);
 }
