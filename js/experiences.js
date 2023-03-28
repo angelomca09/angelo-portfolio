@@ -5,7 +5,7 @@ const experiences = [
     role: "Intern",
     activities: [
       "Worked at the R&D team of the Engineering Sector, developing embedded systems.",
-      "Maintained Web intrefaces.",
+      "Maintained Web interfaces.",
       "Developed and updated documentation.",
       "Techs: ReactJS, C#, AngularJS(legacy), Go, and MySQL.",
     ],
@@ -17,7 +17,7 @@ const experiences = [
     activities: [
       "Promoted from previous role.",
       "Worked at the R&D team of the Engineering Sector, developing embedded systems.",
-      "Responsible for developing and maintaining Web intrefaces.",
+      "Responsible for developing and maintaining Web interfaces.",
       "Developed and updated documentation.",
       "Techs: ReactJS, TypeScript, AngularJS(legacy), and MySQL.",
     ],
