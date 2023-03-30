@@ -29,4 +29,10 @@ const projects = [
     image: "images/project-sticky",
     link: "https://github.com/angelomca09/sticky-frontend",
   },
+  {
+    title: "Switch Interface Clone",
+    description: "A Clone of Nintendo Switch's Interface.",
+    image: "images/project-switch-interface",
+    link: "https://angelomca09.github.io/switch-interface-clone/",
+  },
 ];
