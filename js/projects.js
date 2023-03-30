@@ -1,12 +1,5 @@
 const projects = [
   {
-    title: "MediaPonderada",
-    description:
-      "An interface to calculate the average of values. Useful for colege.",
-    image: "images/project-media",
-    link: "https://angelomca09.github.io/MediaPonderada/",
-  },
-  {
     title: "Calculator",
     description: "An interface to operate as a simple calculator.",
     image: "images/project-calculator",
