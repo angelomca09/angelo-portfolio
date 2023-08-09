@@ -25,4 +25,18 @@ const certificates = [
     image: "images/alura",
     link: "https://cursos.alura.com.br/certificate/6fe5d7b0-b543-464b-8204-3e0d27445f65?lang=en",
   },
+  {
+    title: "Angular part 2",
+    description:
+      "Angular part 2: Authentication, Forms and lazy loading.\nApr 2023",
+    image: "images/alura",
+    link: "https://cursos.alura.com.br/certificate/ff807f91-1bc2-47dd-a9fc-512f8452f240?lang=en",
+  },
+  {
+    title: "Docker",
+    description:
+      "Docker: creating and managing containers.\nApr 2023",
+    image: "images/alura",
+    link: "https://cursos.alura.com.br/certificate/1f624ac2-ec7a-41b8-82b7-0b9113e5fb9f?lang=en",
+  },
 ];

@@ -33,4 +33,14 @@ const experiences = [
       "Techs: ReactJS, TypeScript, C#, Postgres and MySQL.",
     ],
   },
+  {
+    place: "CNH Industrial",
+    period: "07/2023 - now",
+    role: "Software Engineer",
+    activities: [
+      "Working with Precision Agriculture, developing embedded solutions.",
+      "Delivered value under Agile Methodology.",
+      "Techs: QT, QML and C++.",
+    ],
+  },
 ];
