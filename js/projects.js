@@ -35,4 +35,10 @@ const projects = [
     image: "images/project-switch-interface",
     link: "https://angelomca09.github.io/switch-interface-clone/",
   },
+  {
+    title: "SB Cidadanias",
+    description: "A landing page for a company that take care of citizenship processes.",
+    image: "images/sbcidadanias",
+    link: "https://sbcidadanias.com.br/",
+  },
 ];
