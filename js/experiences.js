@@ -7,7 +7,7 @@ const experiences = [
       "Worked at the R&D team of the Engineering Sector, developing embedded systems.",
       "Maintained Web interfaces.",
       "Developed and updated documentation.",
-      "Techs: ReactJS, C#, AngularJS(legacy), Go, and MySQL.",
+      "Techs: ReactJS, C#, AngularJS(legacy), Linux, Go, and MySQL.",
     ],
   },
   {
@@ -19,7 +19,7 @@ const experiences = [
       "Worked at the R&D team of the Engineering Sector, developing embedded systems.",
       "Responsible for developing and maintaining Web interfaces.",
       "Developed and updated documentation.",
-      "Techs: ReactJS, TypeScript, AngularJS(legacy), and MySQL.",
+      "Techs: ReactJS, TypeScript, AngularJS(legacy), Linux, and MySQL.",
     ],
   },
   {
@@ -39,8 +39,10 @@ const experiences = [
     role: "Software Engineer",
     activities: [
       "Working with Precision Agriculture, developing embedded solutions.",
-      "Delivered value under Agile Methodology.",
-      "Techs: QT, QML and C++.",
+      "Deliver value under Agile Methodology (SAFe).",
+      "Attended to meetings and played a role in project definitions.",
+      "Developed and updated documentation.",
+      "Techs: Java, Android, C++, Linux, QT and QML.",
     ],
   },
 ];
