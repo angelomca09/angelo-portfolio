@@ -41,4 +41,10 @@ const projects = [
     image: "images/sbcidadanias",
     link: "https://sbcidadanias.com.br/",
   },
+  {
+    title: "GuessTheSong",
+    description: "A music game where you choose a playlist from Deezer and try to guess the song.",
+    image: "images/guessthesong",
+    link: "https://guessthesong-front.pages.dev/",
+  },
 ];
