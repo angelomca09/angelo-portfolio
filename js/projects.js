@@ -36,12 +36,6 @@ const projects = [
     link: "https://angelomca09.github.io/switch-interface-clone/",
   },
   {
-    title: "SB Cidadanias",
-    description: "A landing page for a company that take care of citizenship processes.",
-    image: "images/sbcidadanias",
-    link: "https://sbcidadanias.com.br/",
-  },
-  {
     title: "GuessTheSong",
     description: "A music game where you choose a playlist from Deezer and try to guess the song.",
     image: "images/guessthesong",
